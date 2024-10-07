@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hotel</title>
+    <!--Bootstrap 5 Cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Custom CSS FIle-->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body class="bg-white" style="margin-bottom: 2000px;" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <!--Navbar Section Start-->
+    <header class="header_Section">
+        <nav class="navbar navbar-expand-lg  shadow-lg rounded-3 position-fixed top-0 start-0 ">
+              <div class="container ">
+                <a class="navbar-brand" href="#">
+                  <img src="images/logo.png" alt="Image Not Found" class="img-fluid">
+                </a>
+  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+  
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav menu-navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active text-decoration-none fw-bolder" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bolder" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bolder" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bolder" href="#rooms">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bolder" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bolder" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bolder" href="#Price">Price</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bolder" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item mt-3 mt-lg-0">
+                      <a class="main-btn text-decoration-none fw-bolder" href="#">Book Now</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!--Navbar End-->
+    <!---Home-->
+    <section id = "home" class="Banner p-0">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+            <button data-bs-slide-to="0" data-bs-target="#img-slider" class="active"></button>
+            <button data-bs-slide-to="1" data-bs-target="#img-slider"></button>
+         </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/slider/slider2.webp" class="d-block w-100" alt="...">
+              <div class="carousel-caption top-0 mt-5 text-sm-center">
+                <h1 class="fw-bolder lh-1 text-center text-white text-uppercase mt-5 display-1 py-5">Hotel in Bangalore</h1>
+                <p class="mt-5 fs-4 fw-bolder text-white lh-1 text-center">Located in the vibrant city of Bangalore, The Oberoi offers luxurious accommodations, world-class amenities, and impeccable service, making it an ideal choice for both business and leisure travelers.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slider/slider1.webp" class="d-block w-100" alt="..." style="filter:grayscale(0%)">
+              <div class="carousel-caption text-center top-0 mt-4 ">
+                <h1 class=" fw-bolder lh-1 text-center text-black text-uppercase mb-5 mt-5 display-1 py-5">Hotel in Mysore</h1>
+                <p class="mt-5 fs-3 fw-bolder text-black">Nestled in the heart of Mysore, The Windflower Resort and Spa provides a tranquil retreat with its lush landscapes, elegant rooms, and rejuvenating wellness treatments, perfect for a relaxing getaway.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    <div class="booking-area bg-white shadow-lg justify-content-end">
+      <form class="row">
+        <div class="mb-3 col-md-2">
+          <input type="date" class='form-control' placeholder="Date">
+        </div>
+        <div class="mb-3 col-md-2">
+          <input type="date" class='form-control' placeholder="Date">
+        </div>
+        <div class="mb-3 col-md-2">
+        <select class="form-select">
+          <option selected>Adults</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>  
+        </div>
+        <div class="mb-3 col-md-2">
+          <select class="form-select">
+            <option selected>Children</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>  
+          </div>
+          <div class="mb-3 col-md-2">
+             <button type="submit" class="main-btn rounded-2">Check Availablity</button>
+          </div>
+      </form>
+    </div>
+    </section>
+    <!--Home End-->
+    <!--About-->
+    <section id = "about" class="About Section">
+      <div class="container">
+        <div class="h1 text-lg-center text-sm-end">About-Us</div>
+        <div class="row flex-lg-row flex-column-reverse">
+          <div class="col-md-6 text-center text-lg-end text-sm-end">
+            <h3>Wlecome to <span>Hotel the Heaven</span> Of Your Week-End</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut numquam, fugiat impedit labore rerum doloremque repellendus iusto hic corporis aperiam rem et nisi earum ratione asperiores neque magnam mollitia dolorem.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quasi modi consequuntur maxime aspernatur omnis similique cumque tempora, soluta alias quas rem obcaecati voluptatum unde possimus laboriosam, nam amet assumenda.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad inventore deleniti optio nesciunt neque! Itaque nihil sequi aliquam dignissimos voluptatibus nostrum excepturi labore atque. Laboriosam deserunt iure delectus officiis esse.
+            Praesentium deserunt enim numquam error sint minima, consequatur, aut iusto sequi cupiditate quia esse necessitatibus. Corporis ut suscipit ipsam, nesciunt molestiae quo aut illo dolores nemo magni cupiditate asperiores tenetur.
+            Placeat optio reiciendis debitis quia praesentium officiis asperiores! Laudantium in tenetur placeat delectus repudiandae facere enim repellendus ipsam corrupti mollitia! Consectetur quasi beatae reprehenderit dicta odit fugiat ad maiores possimus.</p>
+            <a href="#" class="main-btn mt-4 text-decoration-none">Explore</a>
+          </div>
+          <div class="col-md-6 mb-4 text-center">
+            <img src="images/about-img.svg" alt="Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About End-->
+    <!--Rooms-->
+    <section id = rooms class="roomssection">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 mb-5 text-lg-center text-sm-end">
+            <h6 class="text-uppercase fw-semibold fs-4">What Can I do for You</h6>
+            <h3>Our Favorite Rooms</h3>
+          </div>
+        </div>
+        <div class="row m-0">
+          <div class="col-md-4 mb-4 mb-lg-0">
+            <div class="roomitems">
+              <img src="images/room/room1.webp" alt="Image" class="img-fluid">
+              <div class="room-item-wrap">
+                <div class="roomcontent">
+                  <h5 class="text-white mb-lg-5 text-decoration-underline display-5">Hotel In Banglore</h5>
+                  <p class="text-white p-3 fs-4">The hotel in Bangalore offers luxurious accommodations with modern amenities, providing guests with a comfortable and memorable stay in the heart of the city.</p>
+                  <p class="text-white fw-bold mt-4">Rs 2,000/ Per Night</p>
+                  <a href="#" class="main-btn border-white text-white mt-lg-5 text-decoration-none">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-lg-0">
+            <div class="roomitems">
+              <img src="images/room/room2.webp" alt="Image" class="img-fluid">
+              <div class="room-item-wrap">
+                <div class="roomcontent">
+                  <h5 class="text-white mb-lg-5 text-decoration-underline display-5">Hotel In Hyderabad</h5>
+                  <p class="text-white p-3 fs-4">The hotel in Hyderabad offers luxurious accommodations with modern amenities, providing guests with a comfortable and memorable stay in the heart of the city.</p>
+                  <p class="text-white fw-bold mt-4">Rs 1,000/ Per Night</p>
+                  <a href="#" class="main-btn border-white text-white mt-lg-5 text-decoration-none">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-lg-0">
+            <div class="roomitems">
+              <img src="images/room/room3.webp" alt="Image" class="img-fluid">
+              <div class="room-item-wrap">
+                <div class="roomcontent">
+                  <h5 class="text-white mb-lg-5 text-decoration-underline display-5">Hotel In Mumbai</h5>
+                  <p class="text-white p-3 fs-4">The hotel in Mumbai offers luxurious accommodations with modern amenities, providing guests with a comfortable and memorable stay in the heart of the city.</p>
+                  <p class="text-white fw-bold mt-4">Rs 1,500/ Per Night</p>
+                  <a href="#" class="main-btn border-white text-white mt-lg-5 text-decoration-none">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Room End-->
+    <!--Services-->
+    <section id = "service" class="servicewrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 mb-5 text-lg-center text-sm-end">
+            <h6 class="text-uppercase fw-semibold fs-4">What Can I do for You</h6>
+            <h3>Our Services For You!</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7 me-0">
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="spa" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <img src="images/services/service1.webp" alt="Image">
+              </div>
+              <div class="tab-pane fade" id="restaurent" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <img src="images/services/service2.webp" alt="Image">
+              </div>
+              <div class="tab-pane fade" id="pool" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                <img src="images/services/service3.webp" alt="">
+              </div>
+              <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+                <img src="images/services/service6.webp" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5  position-relative">
+            <ul class="nav">
+              <li class="me-0">
+                <button class="nav-link active"  data-bs-toggle="pill" data-bs-target="#spa" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                  <span class="serviceicon me-5 ms-2">
+                  <img src="images/services/service-icon1.webp" alt="">
+                </span>
+                <h5 class="fs-2 fw-bold text-decoration-none lh-1 text-black">Spa, Beauty & Health</h5>
+                    <p class="text-decoration-none text" style="color: #a06e28d2;">A spa and beauty parlour offers a range of relaxing treatments and beauty services, such as massages, facials, and hairstyling, to help clients rejuvenate and enhance their appearance.</p>
+              </button>
+              </li>
+              <li>
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#restaurent" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                  <span class="serviceicon me-5 ms-2">
+                    <img src="images/services/service-icon2.webp" alt="">
+                  </span>
+                  <h5 class="fs-2 fw-bold text-decoration-none lh-1 text-black">Restaurent</h5>
+                  <p class="text-decoration-none text" style="color: #a06e28d2;">
+                    A restaurant provides a variety of delicious meals and beverages, offering a dining experience where customers can enjoy quality food and excellent service in a comfortable setting.</p>
+
+                </button>
+              </li>
+              <li>
+                <button class="nav-link" id="" data-bs-toggle="pill" data-bs-target="#pool" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                  <span class="serviceicon me-5 ms-2">
+                    <img src="images/services/service-icon3.webp" alt="">
+                  </span>
+                  <h5 class="fs-2 fw-bold text-decoration-none lh-1 text-black">Swimming</h5>
+                  <p class="text-decoration-none text" style="color: #a06e28d2;">
+                    Swimming is an excellent form of exercise that promotes cardiovascular health, strengthens muscles, and provides a refreshing way to stay active and cool in the water.</p>
+                </button>
+              </li>
+              <li>
+                <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">
+                  <span class="serviceicon me-5 ms-2">
+                    <img src="images/services/service-icon4.webp" alt="">
+                  </span>
+                  <h5 class="fs-2 fw-bold text-decoration-none lh-1 text-black">Conference</h5>
+                  <p class="text-decoration-none text" style="color: #a06e28d2;">A conference is a formal gathering where individuals or organizations come together to discuss specific topics, share knowledge, and network with peers, often featuring presentations, workshops, and panel discussions.</p>
+
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Rooms Start-->
+    <section class="rooms" id = "room">
+      
+    </section>
+    <!--Rooms End-->
+    <!--Custom Js File-->
+    <script src="Script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
